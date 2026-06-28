@@ -1,0 +1,148 @@
+xrun(64): 24.09-s001: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.09-s001: Started on Jun 28, 2026 at 12:54:42 -03
+xrun
+	-sv
+	-access +r
+	-timescale 1ns/1ps
+	../library/gscl45nm.v
+	../genus/outputs_Jun28-12-52-43/spi_top_netlist.v
+	../tb/spi_tb.sv
+file: ../library/gscl45nm.v
+	module worklib.AND2X1:v
+		errors: 0, warnings: 0
+	module worklib.AND2X2:v
+		errors: 0, warnings: 0
+	module worklib.AOI21X1:v
+		errors: 0, warnings: 0
+	module worklib.AOI22X1:v
+		errors: 0, warnings: 0
+	module worklib.BUFX2:v
+		errors: 0, warnings: 0
+	module worklib.BUFX4:v
+		errors: 0, warnings: 0
+	module worklib.CLKBUF1:v
+		errors: 0, warnings: 0
+	module worklib.CLKBUF2:v
+		errors: 0, warnings: 0
+	module worklib.CLKBUF3:v
+		errors: 0, warnings: 0
+	module worklib.DFFNEGX1:v
+		errors: 0, warnings: 0
+	module worklib.DFFPOSX1:v
+		errors: 0, warnings: 0
+	module worklib.DFFSR:v
+		errors: 0, warnings: 0
+	module worklib.FAX1:v
+		errors: 0, warnings: 0
+	module worklib.HAX1:v
+		errors: 0, warnings: 0
+	module worklib.INVX1:v
+		errors: 0, warnings: 0
+	module worklib.INVX2:v
+		errors: 0, warnings: 0
+	module worklib.INVX4:v
+		errors: 0, warnings: 0
+	module worklib.INVX8:v
+		errors: 0, warnings: 0
+	module worklib.LATCH:v
+		errors: 0, warnings: 0
+	module worklib.MUX2X1:v
+		errors: 0, warnings: 0
+	module worklib.NAND2X1:v
+		errors: 0, warnings: 0
+	module worklib.NAND3X1:v
+		errors: 0, warnings: 0
+	module worklib.NOR2X1:v
+		errors: 0, warnings: 0
+	module worklib.NOR3X1:v
+		errors: 0, warnings: 0
+	module worklib.OAI21X1:v
+		errors: 0, warnings: 0
+	module worklib.OAI22X1:v
+		errors: 0, warnings: 0
+	module worklib.OR2X1:v
+		errors: 0, warnings: 0
+	module worklib.OR2X2:v
+		errors: 0, warnings: 0
+	module worklib.TBUFX1:v
+		errors: 0, warnings: 0
+	module worklib.TBUFX2:v
+		errors: 0, warnings: 0
+	module worklib.XNOR2X1:v
+		errors: 0, warnings: 0
+	module worklib.XOR2X1:v
+		errors: 0, warnings: 0
+file: ../genus/outputs_Jun28-12-52-43/spi_top_netlist.v
+	module worklib.spi_top:v
+		errors: 0, warnings: 0
+file: ../tb/spi_tb.sv
+	module worklib.spi_tb:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+	Top level design units:
+		AND2X2
+		BUFX4
+		CLKBUF1
+		CLKBUF2
+		CLKBUF3
+		DFFNEGX1
+		DFFPOSX1
+		FAX1
+		INVX2
+		INVX4
+		INVX8
+		LATCH
+		OAI22X1
+		OR2X2
+		TBUFX1
+		TBUFX2
+		spi_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.DFFSR:v <0x5488363c>
+			streams:   0, words:     0
+		worklib.spi_data:sv <0x3c8d0a57>
+			streams:   9, words:  3248
+		worklib.spi_top:v <0x47eea61b>
+			streams:   0, words:     0
+		worklib.spi_tb:sv <0x0a4f6ac7>
+			streams:  15, words: 16501
+		worklib.LATCH:v <0x019e769f>
+			streams:   0, words:     0
+		worklib.DFFPOSX1:v <0x26f94304>
+			streams:   0, words:     0
+		worklib.DFFNEGX1:v <0x7f62b19a>
+			streams:   0, words:     0
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                 412      35
+		UDPs:                     99       4
+		Primitives:            1,013       6
+		Timing outputs:          438      19
+		Registers:                85      31
+		Scalar wires:            571       -
+		Expanded wires:           35       5
+		Always blocks:             1       1
+		Initial blocks:            2       2
+		Parallel blocks:           1       1
+		Cont. assignments:         1       1
+		Pseudo assignments:        5       -
+		Timing checks:           829     235
+		Process Clocks:            1       1
+		Simulation timescale:    1ps
+	Writing initial simulation snapshot: worklib.AND2X2:v
+Loading snapshot worklib.AND2X2:v .................... Done
+xcelium> source /home/tools/cadence/installs/XCELIUM2209/tools/xcelium/files/xmsimrc
+xcelium> run
+[TIME: 70000] Configurando Registradores...
+[TIME: 210000] Disparando Transação SPI...
+[TIME: 1620000] Transação Concluída. Lendo RX DATA...
+>>> TESTE PASSOU! Dado recebido: 0xc3
+Simulation complete via $finish(1) at time 1750 NS + 0
+../tb/spi_tb.sv:150         $finish;
+xcelium> exit
+TOOL:	xrun(64)	24.09-s001: Exiting on Jun 28, 2026 at 12:54:44 -03  (total: 00:00:02)

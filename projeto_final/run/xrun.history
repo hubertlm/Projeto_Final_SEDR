@@ -1,0 +1,24 @@
+#e1(28Jun2026:11:56:30): source ./xcelium.d/env.d/env.history.28Jun2026_11_56_30
+s1(28Jun2026:11:56:30):  xrun -64bit -sv ../rtl/spi_clk_gen.sv ../rtl/spi_controller.sv ../rtl/spi_data.sv ../rtl/spi_regs.sv ../rtl/spi_top.sv ../tb/spi_tb.sv -access +rwc 
+#e2(28Jun2026:11:57:29): source ./xcelium.d/env.d/env.history.28Jun2026_11_57_29
+s2(28Jun2026:11:57:29):  xrun -64bit -sv ../rtl/spi_clk_gen.sv ../rtl/spi_controller.sv ../rtl/spi_data.sv ../rtl/spi_regs.sv ../rtl/spi_top.sv ../tb/spi_tb.sv -access +rwc 
+#e3(28Jun2026:12:26:18): source ./xcelium.d/env.d/env.history.28Jun2026_12_26_18
+s3(28Jun2026:12:26:18):  xrun -sv -access +r 
+#e4(28Jun2026:12:26:51): source ./xcelium.d/env.d/env.history.28Jun2026_12_26_51
+s4(28Jun2026:12:26:51):  xrun -sv 
+#e5(28Jun2026:12:27:27): source ./xcelium.d/env.d/env.history.28Jun2026_12_27_27
+s5(28Jun2026:12:27:27):  xrun -sv 
+#e6(28Jun2026:12:29:55): source ./xcelium.d/env.d/env.history.28Jun2026_12_29_55
+s6(28Jun2026:12:29:55):  xrun -sv -access +r -timescale 1ns/1ps ../library/gscl45nm.v ../genus/outputs_Jun28-12:21:18/spi_top.v ../tb/spi_tb.sv 
+#e7(28Jun2026:12:30:22): source ./xcelium.d/env.d/env.history.28Jun2026_12_30_22
+s7(28Jun2026:12:30:22):  xrun -sv -access +r -timescale 1ns/1ps ../library/gscl45nm.v ../genus/outputs_Jun28-12:21:18/spi_top.v ../tb/spi_tb.sv 
+#e8(28Jun2026:12:30:31): source ./xcelium.d/env.d/env.history.28Jun2026_12_30_31
+s8(28Jun2026:12:30:31):  xrun -sv -access +r -timescale 1ns/1ps ../library/gscl45nm.v ../genus/outputs_Jun28-12:21:18/spi_top.v ../tb/spi_tb.sv 
+#e9(28Jun2026:12:53:09): source ./xcelium.d/env.d/env.history.28Jun2026_12_53_09
+s9(28Jun2026:12:53:09):  xrun -sv -access +r -timescale 1ns/1ps ../library/gscl45nm.v ../genus/outputs_Jun28-12-52-43/spi_top.v ../tb/spi_tb.sv 
+#e10(28Jun2026:12:53:52): source ./xcelium.d/env.d/env.history.28Jun2026_12_53_52
+s10(28Jun2026:12:53:52):  xrun -sv -access +r -timescale 1ns/1ps ../library/gscl45nm.v ../genus/outputs_Jun28-12-52-43/netlist.v ../tb/netlist.sv 
+#e11(28Jun2026:12:54:13): source ./xcelium.d/env.d/env.history.28Jun2026_12_54_13
+s11(28Jun2026:12:54:13):  xrun -sv -access +r -timescale 1ns/1ps ../library/gscl45nm.v ../genus/outputs_Jun28-12-52-43/netlist.v ../tb/spi_tb.sv 
+#e12(28Jun2026:12:54:42): source ./xcelium.d/env.d/env.history.28Jun2026_12_54_42
+s12(28Jun2026:12:54:42):  xrun -sv -access +r -timescale 1ns/1ps ../library/gscl45nm.v ../genus/outputs_Jun28-12-52-43/spi_top_netlist.v ../tb/spi_tb.sv 
