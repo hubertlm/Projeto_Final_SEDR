@@ -25,7 +25,7 @@ module spi_data (
     logic [6:0] tx_shift_reg; 
     logic [2:0] bit_counter;
 
-    always_ff @(posedge clk or negedge rst) begin
+    always_ff @(posedge clk) begin
         if (!rst) begin
             tx_shift_reg <= 7'b0;
             rx_shift_reg <= 8'h00;

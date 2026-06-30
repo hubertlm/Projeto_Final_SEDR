@@ -18,7 +18,7 @@ module spi_clk_gen (
     assign cpol = spi_mode[1];
     assign cpha = spi_mode[0];
 
-    always_ff @(posedge clk or negedge rst) begin
+    always_ff @(posedge clk) begin
         if (!rst) begin
             counter  <= 16'd0;
             sclk_int <= 1'b0;

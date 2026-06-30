@@ -42,7 +42,7 @@ module spi_regs (
     assign tx_data  = reg_tx_data;
 
     // Lógica de Escrita Síncrona
-    always_ff @(posedge clk or negedge rst) begin
+    always_ff @(posedge clk) begin
         if (!rst) begin
             reg_ctrl    <= 8'h00;
             reg_clk_lo  <= 8'h04; // Valor default inferior seguro

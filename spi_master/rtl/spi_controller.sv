@@ -25,7 +25,7 @@ module spi_controller (
     state_t state, next_state;
 
     // Lógica Síncrona de Estado
-    always_ff @(posedge clk or negedge rst) begin
+    always_ff @(posedge clk) begin
         if (!rst) state <= IDLE;
         else        state <= next_state;
     end
